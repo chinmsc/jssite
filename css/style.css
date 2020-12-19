@@ -16,3 +16,10 @@ li{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+body{
+
+}
+.header__top{
+    background-color: #303030;
+}
