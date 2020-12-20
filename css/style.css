@@ -18,8 +18,14 @@ li{
 }
 
 body{
+    /* font-family: 'PT Serif', serif; */
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
 
 }
 .header__top{
     background-color: #303030;
+}
+.header__btn{
+    float: right;
 }
