@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,35 +18,46 @@
   <header class="header">
     <div class="header__top">
       <div class="container">
-        <a class="header__phone" href="tel:35799455817">+357 99455817</a>
-        <a class="header_email" href="#">chin.msc@yandex.ru</a>
-        <a class="header__btn" href="#">Бесплатные консультации</a>
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:35799455817">+357 99455817</a>
+          <a class="header_email" href="#">chin.msc@yandex.ru</a>
+          <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатные
+            консультации</a>
+        </div>
       </div>
     </div>
-
     <div class="header__content">
       <div class="container">
-      <div class="header__logo">
-        <a href="#">
-          <img src="img/logo.png" alt="">
-        </a>
-      </div>
-      <nav class="menu">
+        <div class="header__content-inner">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <nav class="menu">
 
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Услуги </a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Услуги </a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
+  </header>
+
+
+  <div style="display: none;" id="modal">
+    <h2>Hello!</h2>
+    <p>You are awesome!</p>
   </div>
 
 
-
-  </header>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
