@@ -69,6 +69,7 @@ header {
     letter-spacing: 0, 25px;
     line-height: 45px;
     position: relative;
+    
 }
 
 .header__phone {
@@ -86,6 +87,7 @@ header {
 
 .header__email {
     padding-left: 24px;
+    
 }
 
 .header__email:before {
